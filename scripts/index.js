@@ -13,7 +13,7 @@ function positiveArray(arr) {
     });
     return newArr;
 };
-
+// console.log(positiveArray(numArray));
 function evenArray(arr) {
     let newArr = [];
     arr.forEach(function(el) {
@@ -25,7 +25,7 @@ function evenArray(arr) {
     });
     return newArr;
 }
-
+// console.log(evenArray(numArray));
 function squareArray(arr) {
     let newArr = [];
     // for each element in array
@@ -35,7 +35,7 @@ function squareArray(arr) {
     });
     return newArr
 }
-
+// console.log(squareArray(numArray));
 var cities = [
     { name: 'Los Angeles', temperature: 60.0},
     { name: 'Atlanta', temperature: 52.0 },
@@ -54,8 +54,8 @@ function coolCities (citiesDict) {
         }
     });
     return coolArr;
-
 }
+// console.log(coolCities(cities));
 
 function coolCityNames (citiesDict) {
     let coolArr = [];
@@ -68,6 +68,7 @@ function coolCityNames (citiesDict) {
     });
     return coolArr;
 }
+// console.log(coolCityNames(cities));
 
 var people = [
     'Dom',
@@ -93,6 +94,7 @@ function goodJob(arr){
     });
 }  
 
+// goodJob(people);
 
 function hullo() {
     return "Hello World!"
@@ -105,12 +107,13 @@ function call3Times(fun){
     console.log(`${msg}, ${msg2}, ${msg3}`);
 }
 
+// call3Times(hullo);
 
 function callNTimes(times, fun) {
     for(let i = 0; i < times; i++)
     console.log(`${fun}`)
 }
-// callNTimes(5,call3Times());
+// callNTimes(5,hullo());
 
 function strMultiply (str, times){
     let empty = "";
@@ -133,7 +136,7 @@ function sortArray2(arr){
     });
     return arr
 }
-
+// console.log(sortArray2(people));
 
 var products = [
     { name: 'Basketball', price: 12.00 },
@@ -152,3 +155,5 @@ function sortByPrice(arr) {
 
     return arr
 }
+
+// console.log(sortByPrice(products));
